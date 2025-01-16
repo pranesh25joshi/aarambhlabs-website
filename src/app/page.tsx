@@ -4,13 +4,13 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { HexBackground } from '@/components/hex-background'
 import { ScrambleText } from '@/components/scramble-text'
-import { Mountain } from 'lucide-react'
+// import { Mountain } from 'lucide-react'
 import Image from 'next/image'
 import logo from "@/lib/transparent AarambhLabs logo.png"
 
 export default function Home() {
-  const [score, setScore] = useState(0)
-
+  const [score, setScore] = useState(0);
+  console.log(score);
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
       <HexBackground onScoreUpdate={setScore} />

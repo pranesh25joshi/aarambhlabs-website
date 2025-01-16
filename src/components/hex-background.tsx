@@ -8,7 +8,8 @@ interface HexBackgroundProps {
 
 export function HexBackground({ onScoreUpdate }: HexBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [score, setScore] = useState(0)
+  const [score, setScore] = useState(0);
+  console.log(score);
 
   useEffect(() => {
     const canvas = canvasRef.current
